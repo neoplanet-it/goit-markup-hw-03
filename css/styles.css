@@ -354,6 +354,7 @@ address {
 
   margin: 0;
   padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .project-list {
@@ -363,13 +364,14 @@ address {
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 94px;
-  text-indent: ;
+
+  gap: 20px;
+  padding: 0;
 }
 
 .border-item {
   background: #ffffff;
   border: 1px solid #eeeeee;
-  padding-top: 30px;
 }
 
 /**CONTAINER+SECTION*/
