@@ -354,7 +354,6 @@ address {
 
   margin: 0;
   padding-left: 24px;
-  padding-bottom: 50px;
 }
 
 .project-list {
@@ -370,6 +369,7 @@ address {
 .border-item {
   background: #ffffff;
   border: 1px solid #eeeeee;
+  padding-top: 30px;
 }
 
 /**CONTAINER+SECTION*/
