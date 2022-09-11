@@ -108,7 +108,7 @@ header {
 }
 
 .site-nav {
-  gap: 40px;
+  gap: 50px;
 }
 
 .main-nav {
@@ -136,8 +136,9 @@ header {
 
 .main-baner {
   background: var(--background-color);
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  text-align: center;
 }
 
 .baner {
@@ -149,16 +150,10 @@ header {
   color: var(--white-color);
 
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
-  padding-left: 270px;
-  padding-right: 270px;
-  min-width: 696px;
-}
-
-.hero {
-  padding-top: 200px;
-  padding-bottom: 280px;
-  text-align: center;
+  max-width: 696px;
 }
 
 button {
@@ -304,15 +299,32 @@ img {
 /**FOOTER*/
 
 .main-footer {
-  margin-left: auto;
-  margin-right: auto;
   background: var(--background-color);
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 address {
   font-style: normal;
   margin-top: 20px;
-  padding-bottom: 60px;
+}
+
+.contact-link {
+  margin-bottom: 9px;
+}
+
+.contact2:hover,
+.contact2:focus {
+  color: var(--link-color);
+}
+
+.contact2 {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--contactfooter-color);
 }
 
 .address {
@@ -322,23 +334,14 @@ address {
   text-decoration: none;
 }
 
-.contact-link {
-  margin-bottom: 9px;
-}
-
-.logo-footer {
-  padding-top: 60px;
-}
-
-.contact2 {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--contactfooter-color);
-}
-
 /**MAIN PORTFOLIO*/
 
 /**MAIN FILTER*/
+
+.section-elements {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .button {
   font-weight: 700;
@@ -360,7 +363,6 @@ address {
 
 .link-click {
   display: flex;
-  padding-top: 94px;
   justify-content: center;
 }
 
@@ -395,11 +397,10 @@ address {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 94px;
 
   gap: 30px;
   padding: 0;
+  padding-top: 34px;
 }
 
 .style-name {
@@ -408,7 +409,9 @@ address {
 
 .border-item {
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 /**CONTAINER+SECTION*/
