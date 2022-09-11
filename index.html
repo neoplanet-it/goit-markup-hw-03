@@ -45,20 +45,20 @@
     <main>
       <!--*ГЛАВНЫЙ БАНЕР*-->
 
-      <div class="main-baner">
-        <section class="container hero">
+      <section class="main-baner">
+        <div class="container hero">
           <h1 class="baner">Ефективні рішення для вашого бізнесу</h1>
           <button class="link-but" type="button">Замовити послугу</button>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!--*ПРЕИМУЩЕСТВА КОМПАНИИ*-->
 
-      <section class="section">
+      <section class="main-pry-comp">
         <div class="container">
           <h2 class="visually-hidden">Переваги Компанії</h2>
           <ul class="list pry-comp">
-            <li class="item">
+            <li class="item flex-el">
               <h3 class="other-info1">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="other-info2">
                 Ідейні міркування, і навіть початок <br />
@@ -66,21 +66,21 @@
                 позиції.
               </p>
             </li>
-            <li class="item">
+            <li class="item flex-el">
               <h3 class="other-info1">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="other-info2">
                 Завдання організації, особливо рамки <br />
                 і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="item">
+            <li class="item flex-el">
               <h3 class="other-info1">ПЛАНУВАННЯ</h3>
               <p class="other-info2">
                 Так само консультація з широким <br />
                 активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item">
+            <li class="item flex-el">
               <h3 class="other-info1">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="other-info2">
                 Значимість цих проблем настільки <br />
@@ -94,7 +94,7 @@
 
       <!--*ЦЕЛИ КОМПАНИИ*-->
 
-      <section class="section">
+      <section class="main-future-comp">
         <div class="container">
           <h2 class="main-font">Чим ми займаємося</h2>
           <ul class="list future-comp">
@@ -119,23 +119,31 @@
           <ul class="list team-comp">
             <li class="item card-color">
               <img src="./images/worker1.jpg" alt="Ігор Дем'яненко" width="270" />
-              <h3 class="name">Ігор Дем'яненко</h3>
-              <p class="work">Product Designer</p>
+              <div class="name-work">
+                <h3 class="name">Ігор Дем'яненко</h3>
+                <p class="work">Product Designer</p>
+              </div>
             </li>
             <li class="item card-color">
               <img src="./images/worker2.jpg" alt="Ольга Рєпіна" width="270" />
-              <h3 class="name">Ольга Рєпіна</h3>
-              <p class="work">Frontend Developer</p>
+              <div class="name-work">
+                <h3 class="name">Ольга Рєпіна</h3>
+                <p class="work">Frontend Developer</p>
+              </div>
             </li>
             <li class="item card-color">
               <img src="./images/worker3.jpg" alt="Микола Тарасов" width="270" />
-              <h3 class="name">Микола Тарасов</h3>
-              <p class="work">Marketing</p>
+              <div class="name-work">
+                <h3 class="name">Микола Тарасов</h3>
+                <p class="work">Marketing</p>
+              </div>
             </li>
             <li class="item card-color">
               <img src="./images/worker4.jpg" alt="Михайло Єрмаков" width="270" />
-              <h3 class="name">Михайло Єрмаков</h3>
-              <p class="work">UI Designer</p>
+              <div class="name-work">
+                <h3 class="name">Михайло Єрмаков</h3>
+                <p class="work">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -144,31 +152,29 @@
 
     <!--*FOOTER*-->
 
-    <div class="main-footer">
-      <section class="container logo-footer">
-        <footer>
-          <a class="logo" href="./index.html">Web<span class="studio-logo2">Studio</span></a>
-          <address>
-            <ul class="list">
-              <li class="contact-link">
-                <a
-                  class="address link-nav"
-                  href="https://goo.gl/maps/FWyEGyq7byPqRoUa9"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="contact-link">
-                <a class="contact2 link-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li class="contact-link">
-                <a class="contact2 link-nav" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </footer>
-      </section>
-    </div>
+    <footer class="main-footer">
+      <div class="container logo-footer">
+        <a class="logo" href="./index.html">Web<span class="studio-logo2">Studio</span></a>
+        <address>
+          <ul class="list">
+            <li class="contact-link">
+              <a
+                class="address link-nav"
+                href="https://goo.gl/maps/FWyEGyq7byPqRoUa9"
+                target="_blank"
+                rel="noreferrer noopener"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="contact-link">
+              <a class="contact2 link-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contact-link">
+              <a class="contact2 link-nav" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
   </body>
 </html>

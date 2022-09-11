@@ -107,13 +107,20 @@ header {
   margin-left: 93px;
 }
 
-.site-nav .item + .item {
-  margin-left: 40px;
+.site-nav {
+  gap: 40px;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-nav {
@@ -129,6 +136,8 @@ header {
 
 .main-baner {
   background: var(--background-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .baner {
@@ -165,7 +174,7 @@ button {
   font-family: inherit;
 
   display: inline-block;
-  border: 1px solid transparent;
+  border: transparent;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 216px;
@@ -173,18 +182,35 @@ button {
 
 /**MAIN WORK*/
 
-.pry-comp {
-  display: flex;
+.main-pry-comp {
+  padding: 0;
+  padding-top: 94px;
+  padding-bottom: 47px;
 }
 
-.pry-comp .item + .item {
-  margin-left: 30px;
+.pry-comp {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.flex-el {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.flex-el:nth-child(4n) {
+  margin-right: 0;
+}
+
+/**.flex-el .item + .item {
+  margin-left: 30px;
+}*/
 
 .other-info1 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   color: var(--primary-color);
 
   margin: 0;
@@ -192,8 +218,10 @@ button {
 }
 
 .other-info2 {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--grey-color);
 
   margin: 0;
@@ -201,12 +229,17 @@ button {
 
 /**FUTURE COMPANY*/
 
-.future-comp {
-  display: flex;
+.main-future-comp {
+  padding-top: 47px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.future-comp .item + .item {
-  margin-left: 30px;
+.future-comp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .main-font {
@@ -217,7 +250,7 @@ button {
 
   margin: 0;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /**MAIN TEAM*/
@@ -229,7 +262,7 @@ img {
 
 .name {
   margin: 0;
-  padding-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -237,29 +270,31 @@ img {
   color: var(--primary-color);
 }
 
+.name-work {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .work {
   margin: 0;
-  padding-top: 10px;
   font-size: 16px;
   line-height: 1.18;
   color: var(--grey-color);
 }
 
 .main-team {
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--button-color);
 }
 
 .team-comp {
   display: flex;
   text-align: center;
-}
-
-.team-comp .item + .item {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 .card-color {
-  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -269,12 +304,15 @@ img {
 /**FOOTER*/
 
 .main-footer {
+  margin-left: auto;
+  margin-right: auto;
   background: var(--background-color);
 }
 
 address {
   font-style: normal;
   margin-top: 20px;
+  padding-bottom: 60px;
 }
 
 .address {
@@ -285,12 +323,11 @@ address {
 }
 
 .contact-link {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .logo-footer {
   padding-top: 60px;
-  padding-bottom: 161px;
 }
 
 .contact2 {
@@ -341,9 +378,7 @@ address {
   color: var(--primary-color);
 
   margin: 0;
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .project {
@@ -353,8 +388,6 @@ address {
   color: var(--grey-color);
 
   margin: 0;
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
 
 .project-list {
@@ -365,8 +398,12 @@ address {
   padding-top: 50px;
   padding-bottom: 94px;
 
-  gap: 20px;
+  gap: 30px;
   padding: 0;
+}
+
+.style-name {
+  padding: 20px 24px;
 }
 
 .border-item {
