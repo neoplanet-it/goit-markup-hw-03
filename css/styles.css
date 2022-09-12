@@ -94,6 +94,7 @@ body {
 .contact {
   color: var(--grey-color);
   text-decoration: none;
+  display: block;
 }
 
 header {
@@ -102,8 +103,6 @@ header {
 
 .site-nav {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: 93px;
 }
 
@@ -114,11 +113,10 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .link-nav {
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -137,7 +135,7 @@ header {
 .main-baner {
   background: var(--background-color);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -316,6 +314,19 @@ address {
   margin-bottom: 9px;
 }
 
+.list .contact-link {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.contact-link:last-child {
+  margin-bottom: 0;
+}
+
 .contact2:hover,
 .contact2:focus {
   color: var(--link-color);
@@ -325,6 +336,7 @@ address {
   font-size: 14px;
   line-height: 1.71;
   color: var(--contactfooter-color);
+  text-decoration: none;
 }
 
 .address {
@@ -344,7 +356,7 @@ address {
 }
 
 .button {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -400,7 +412,7 @@ address {
 
   gap: 30px;
   padding: 0;
-  padding-top: 34px;
+  margin-top: 50px;
 }
 
 .style-name {
